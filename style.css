@@ -1,0 +1,145 @@
+:root {
+	--color-orange: hsl(25, 97%, 53%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-light-grey: rgb(149, 158, 172);
+	--color-dark-blue: hsl(213, 20%, 18%);
+	--color-very-dark-blue: hsl(216, 12%, 8%);
+
+	--font-weight-400: 400;
+	--font-weight-700: 700;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 15px;
+	font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+h1, 
+h2,
+p,
+button {
+	font-family: inherit;
+}
+
+h1, h2 {
+	color: var(--color-white);
+	font-weight: var(--font-weight-700);
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+p,
+button {
+	color: var(--color-light-grey);
+	font-size: inherit;
+	font-weight: var(--font-weight-400);
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+main {
+	background-color: var(--color-very-dark-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.rating-section,
+.thank-you-section {
+	background-color: var(--color-dark-blue);
+	padding: 1.5rem;
+	border-radius: 20px;
+	max-width: 340px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.star-container,
+.rating-btn {
+	background-color: rgba(149, 158, 172, 0.2);
+	width: 44px;
+	height:44px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rating-btn:hover {
+	background-color: var(--color-orange);
+	color: var(--color-very-dark-blue);
+}
+
+.focus {
+	background-color: var(--color-white);
+	color: var(--color-very-dark-blue);
+}
+
+.rating-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.submit-btn {
+	margin-top: 2rem;
+	width: 100%;
+	background-color: var(--color-orange);
+	color: var(--color-very-dark-blue);
+	border-radius: 30px;
+	padding: 0.8rem;
+	text-transform: uppercase;
+	font-weight: var(--font-weight-700);
+	letter-spacing: 0.1rem;
+}
+
+.submit-btn:hover {
+	background-color: var(--color-white);
+	color: var(--color-very-dark-blue);
+}
+
+.thank-you-section {
+	padding: 2rem 1.5rem;
+	align-items: center;
+	text-align: center;
+}
+
+.thank-you-img {
+	width: 160px;
+	height: auto;
+}
+
+.select-rate {
+	background-color: rgba(149, 158, 172, 0.2);
+	color: var(--color-orange);
+	padding: 0.6rem 1rem;
+	border-radius: 30px;
+	margin: 1rem 0 1.3rem 0;
+}
+
+.hidden {
+	display: none;
+}
